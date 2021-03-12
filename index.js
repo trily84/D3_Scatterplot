@@ -47,12 +47,6 @@ function createBar(data) {
 
     var minSecParse = d3.timeParse("%M:%S");
     var timeFormat = d3.timeFormat("%M:%S");
-
-    // var valueX = data.map(x => parseInt(x[0].split("-")[0]))
-    // maxX = Math.max(...valueX)
-    // minX = Math.min(...valueX)
-
-    // const maxY = d3.max(data, (d) => d[1])
     
     var xScale = d3.scaleLinear()
     .domain([1992, 2017])
