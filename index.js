@@ -1,5 +1,5 @@
 // fetch data from json file
-fetch('https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/cyclist-data.json')
+fetch('/cyclist-data.json')
 	.then(response => response.json())
 	.then(response => {
         const data = response
@@ -11,8 +11,6 @@ function createBar(data) {
     var w = 500
     var h = 500
     var padding = 50
-
-    // console.log(parseInt(data[0].Time.split(":")[0])*60 + parseInt(data[0].Time.split(":")[1]))
 
     // create svg element to contain everything relate to bar chart
     var svg = d3.select("body")
