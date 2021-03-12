@@ -1,5 +1,5 @@
 // fetch data from json file
-fetch('/cyclist-data.json')
+fetch('https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/cyclist-data.json')
 	.then(response => response.json())
 	.then(response => {
         const data = response
